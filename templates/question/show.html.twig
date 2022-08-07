@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    
+{{ question }}
+
+{# comment #}
+
+<h2>Answers {{ answers|length }}</h2>
+
+{% for answer in answers %}
+    <li>{{ answer }}</li>
+{% endfor %}
+
+<div>
+    Eventually, we'll print the full question here!
+</div>
+
+{% endblock %}
+
